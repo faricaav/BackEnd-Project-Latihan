@@ -22,6 +22,8 @@ POST : http://localhost:8080/siswa <br>
 PUT : http://localhost:8080/siswa/{nis} <br>
 DELETE : http://localhost:8080/siswa/{nis} <br>
 
+---------------------------------------------------------
+
 <b>API SERTIFIKAT</b> <br>
 GET ALL : http://localhost:8080/sertifikat <br>
 GET FIND BY SISWA : http://localhost:8080/sertifikat/siswa/{nis} <br>
@@ -30,12 +32,16 @@ POST : http://localhost:8080/sertifikat <br>
 PUT : http://localhost:8080/sertifikat/{id_sertifikat} <br>
 DELETE : http://localhost:8080/sertifikat/{id_sertifikat} <br>
 
+---------------------------------------------------------
+
 <b>API ARTIKEL</b> <br>
 GET ALL : http://localhost:8080/artikel <br>
 GET FIND BY ID : http://localhost:8080/artikel/{id} <br>
 POST : http://localhost:8080/artikel <br>
 PUT : http://localhost:8080/artikel/{id} <br>
 DELETE : http://localhost:8080/artikel/{id} <br>
+
+---------------------------------------------------------
 
 <b>API USER</b> <br>
 GET ALL : http://localhost:8080/user <br>
