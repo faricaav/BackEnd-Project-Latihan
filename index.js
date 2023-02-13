@@ -11,11 +11,11 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-//endpoint artikel mongo
+//endpoint artikel
 const artikel = require('./routes/artikel')
 app.use("/artikel", artikel)
 
-//endpoint user redis
+//endpoint user
 const users = require('./routes/users')
 app.use("/users", users)
 
