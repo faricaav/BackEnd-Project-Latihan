@@ -27,6 +27,23 @@ app.use("/siswa", siswa)
 const sertifikat = require('./routes/sertifikat');
 app.use("/sertifikat", sertifikat)
 
+const schedule = require('node-schedule')
+//import model
+const model = require('./models/index');
+const scheduler = model.scheduler
+
+const job = schedule.scheduleJob('*/5 * * * *', async function(){
+    console.log("every 5 minutes add data to database");
+
+    const sch = new scheduler({
+        waktu_sekarang: new Date(Date.now())
+    })
+    await sch.save();
+})
+
+job.invoke()
+
+
 //conn mongodb
 mongoose.set("strictQuery", false);
 mongoose.connect('mongodb://localhost:27017/db_artikel',{
