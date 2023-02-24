@@ -12,6 +12,19 @@ Run : <br>
 ```npm start```
 
 ---------------------------------------------------------
+Scheduler berada di file index.js
+
+Screenshot Database : <br>
+![Screenshot (357)](https://user-images.githubusercontent.com/100252923/221159251-29a0009d-9c95-473e-b0f6-d154ae76a33d.png)
+
+---------------------------------------------------------
+<b>API UNTUK RABBITMQ</b> <br>
+
+GET : hhttp://localhost:8080/rabbit <br>
+Screenshot Output RabbitMQ : <br>
+![Screenshot (358)](https://user-images.githubusercontent.com/100252923/221159379-b1f02534-29e9-4a6c-b411-d505e2f209e8.png)
+
+---------------------------------------------------------
 
 <b>Dokumentasi API</b>:
 
