@@ -3,6 +3,9 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const schedule = require('node-schedule')
+const {consumeQueue} = require('./library/rabbitmq');
+const {consumerRabbit} = require('./controllers/rabbitmq')
 
 //implementasi
 const app = express();
@@ -27,7 +30,11 @@ app.use("/siswa", siswa)
 const sertifikat = require('./routes/sertifikat');
 app.use("/sertifikat", sertifikat)
 
-const schedule = require('node-schedule')
+const rabbit = require('./routes/rabbitmq')
+app.use('/rabbit', rabbit)
+
+consumeQueue('TestProduceQueue', consumerRabbit)
+
 //import model
 const model = require('./models/index');
 const scheduler = model.scheduler
