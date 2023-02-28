@@ -19,7 +19,7 @@ var mailOptions = {
     text: "Hello world?", // plain text body
     html: '<b>Hello world?</b> <br> See This Image: <br> <img src="cid:unique"/>', // html body
     attachments: [{
-        filename: 'logo192.png',
+        filename: 'photo attach.png',
         path: 'photo attach.png',
         cid: 'unique' //same cid value as in the html img src
     }]
