@@ -12,6 +12,14 @@ Run : <br>
 ```npm start```
 
 ---------------------------------------------------------
+Run Nodemailer : <br>
+
+```node send-email.js``` <br>
+
+Screenshot Inbox Email : <br>
+![Screenshot (364)](https://user-images.githubusercontent.com/100252923/221796223-0dcc24b3-cf9b-4df3-b298-58f38919446c.png)
+
+---------------------------------------------------------
 Scheduler berada di file index.js
 
 Screenshot Database : <br>
